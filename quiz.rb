@@ -18,6 +18,14 @@ def multiples(multiple, max_num)
 	return array
 end
 
+def multiples(multiple, max_num)
+	multiple_array = []
+	multiple.upto(max_num-1) do |value|
+		multiple_array << array if (value % multiple) == 0
+	end
+	return multiple_array
+end
+
 # puts multiples(2, 8)
 # puts multiples(0, 10)
 # puts multiples(1, 10)
